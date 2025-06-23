@@ -22,7 +22,7 @@ if "page" not in st.session_state:
     st.session_state.page = "home"
 
 if st.session_state.page == "home":
-    st.image("assets/logo.png", width=120)
+    st.image("logo.png", width=120)
     st.title("Sugana's Conversational AI")
     st.markdown(
         """
