@@ -60,7 +60,7 @@ if st.session_state.page == "home":
         st.rerun()
 
 elif st.session_state.page == "chatbot":
-    st.image("assets/logo.png", width=120)
+    st.image("logo.png", width=120)
     st.title("🤖 Sugana's AI with LangChain")
     st.markdown("Welcome! Chat with an AI assistant powered by Llama3 and LangChain.")
 
