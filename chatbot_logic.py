@@ -6,7 +6,8 @@ from langchain_groq import ChatGroq
 import streamlit as st
 
 def get_conversation_chain():
-    GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+    
     if not GROQ_API_KEY or GROQ_API_KEY == "YOUR_GROQ_API_KEY":
         st.error("Please set your GROQ_API_KEY environment variable.")
         st.stop()
